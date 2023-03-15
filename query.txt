@@ -1,0 +1,1 @@
+db.users.insertMany(Array.from({ length: 1000 }).map((_, index) => ({ name: ["Dmitry", "Makar", "Alice", "Pavel", "Denis", "Daniil", "Masha"][index % 9], password: ["1234", "5678", "qwerty", "zxc"][index % 4], age: (index % 18) + 1, clearance: ["teacher", "student", "admin",][index % 3], index: index,})));
